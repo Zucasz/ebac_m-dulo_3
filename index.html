@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <title>Cadastro</title>
 </head>
 
@@ -18,13 +19,13 @@
                 <h1>Formulário de cadastro</h1> <br />
 
                 <label for="cadastro-nome">Nome:</label>
-                <input type="text" id="cadastro-nome" placeholder="Lucas"> <br />
+                <input type="text" name="username" id="cadastro-nome" placeholder="Lucas" required maxlength="30"> <br />
 
                 <label for="cadastro-email"><i>E-mail</i>:</label>
-                <input type="text" id="cadastro-email" placeholder="seuemail@dominio.com"> <br />
+                <input type="email" name="email" id="cadastro-email" placeholder="seuemail@dominio.com" required> <br />
 
                 <label for="cadastro-senha">Senha:</label>
-                <input type="password" id="cadastro-senha" placeholder="********"> <br />
+                <input type="password" name="password" id="cadastro-senha" placeholder="********" required minlength="8"> <br />
 
                             <h4>Caso precise de ajuda para escolher uma senha forte, veja <a href="https://support.google.com/accounts/answer/32040?hl=pt">recomendações de segurança do Google aqui</a>.</h4>
 
